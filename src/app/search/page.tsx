@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "../components/SearchBar";
+
 
 const HomePage: React.FC = () => {
   const [checkIn, setCheckIn] = useState<Date | null>(new Date("2022-12-22"));
@@ -19,12 +20,8 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center -mt-11 min-h-screen flex-col w-full">
-      <h1 className="text-center font-poppins text-6xl font-semibold tracking-normal text-text mb-12">
-        Os melhores <span className="text-primary">Hotéis</span> e {" "}
-        <span className="text-primary">Destinos</span>
-        <br /> para sua viagem
-      </h1>
+    <>
+    <div className="flex items-center p-60 min-h-screen flex-col">
       <SearchBar
         checkIn={checkIn}
         setCheckIn={setCheckIn}
@@ -41,6 +38,8 @@ const HomePage: React.FC = () => {
         handleApplyGuests={handleApplyGuests}
       />
     </div>
+    </>
+    
   );
 };
 
