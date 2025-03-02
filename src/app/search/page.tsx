@@ -4,7 +4,7 @@ import { useState } from "react";
 import SearchBar from "../components/SearchBar";
 
 
-const HomePage: React.FC = () => {
+const Search: React.FC = () => {
   const [checkIn, setCheckIn] = useState<Date | null>(new Date("2022-12-22"));
   const [checkOut, setCheckOut] = useState<Date | null>(new Date("2022-12-28"));
   const [showGuestOptions, setShowGuestOptions] = useState<boolean>(false);
@@ -43,4 +43,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Search;
