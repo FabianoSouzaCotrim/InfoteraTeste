@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SearchBar from "../components/SearchBar";
+import HotelList from "../components/HotelList";
 
 
 const HomePage: React.FC = () => {
@@ -38,6 +39,8 @@ const HomePage: React.FC = () => {
         handleApplyGuests={handleApplyGuests}
       />
     </div>
+
+    <HotelList/>
     </>
     
   );

@@ -40,14 +40,14 @@ export default function SuggestionsSelector() {
   };
 
   return (
-    <div className="relative w-64">
+    <div className="relative w-full">
       <input
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         onFocus={() => setShowSuggestions(true)}
         onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-        className="w-full outline-none border-none p-2 border rounded text-lg"
+        className="w-full outline-none border-none p-2 border font-bold rounded text-xm"
       />
       {showSuggestions && suggestions.length > 0 && (
         <div className="relative">
