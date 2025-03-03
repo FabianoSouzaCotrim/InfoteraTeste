@@ -1,5 +1,4 @@
 "use client";
-
 import useSearchState from "./hooks/useSearchState";
 import SearchBar from "./components/SearchBar";
 
