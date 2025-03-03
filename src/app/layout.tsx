@@ -1,9 +1,13 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./styles/globals.css";
 import "@fontsource/poppins";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="pt-br">
       <head>
@@ -12,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Infotravel</title>
       </head>
       <body className="flex flex-col min-h-screen">
-        <Header />
+        <Header/>
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>

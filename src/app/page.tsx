@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
   const searchState = useSearchState();
 
   return (
-    <div className="flex items-center pt-56 min-h-screen flex-col w-full p-10">
+    <div className="flex items-center pt-56 flex-col w-full p-10">
       <h1 className="text-center font-poppins text-6xl font-semibold tracking-normal text-text mb-12">
         Os melhores <span className="text-primary">Hotéis</span> e {" "}
         <span className="text-primary">Destinos</span> <br /> para sua viagem

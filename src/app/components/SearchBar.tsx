@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import GuestSelector from "./GuestSelector";
@@ -36,6 +37,12 @@ const SearchBar: React.FC<SearchBarProps> = ({
   setShowGuestOptions,
   handleApplyGuests,
 }) => {
+  const router = useRouter();
+
+  const handleSearch = () => {
+    router.push("/search");
+  };
+
   return (
     <div className="flex items-center bg-white p-4 rounded-2xl shadow-md space-x-2 w-11/12">
       <div className="flex flex-col space-x-2 flex-[1.5]">
@@ -109,7 +116,10 @@ const SearchBar: React.FC<SearchBarProps> = ({
         )}
       </div>
 
-      <button className="bg-primary text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition">
+      <button
+        className="bg-primary text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition"
+        onClick={handleSearch}
+      >
         Pesquisar
       </button>
     </div>

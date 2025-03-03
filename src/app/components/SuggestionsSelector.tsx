@@ -40,7 +40,7 @@ export default function SuggestionsSelector() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full z-50">
       <input
         type="text"
         value={inputValue}
