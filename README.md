@@ -23,6 +23,14 @@ A aplicação se comunica com uma **Fake API** que simula a listagem de hotéis 
 - **Fake API** para simulação de dados com as rotas `/suggestions`, `/hotels`, e `/hotels/[id]`.
 
 ### Como Rodar:
+1. Instale as dependências e inicie o site local:
+    ```bash
+    npm install
+    npm run dev
+    ```
+
+
+### Como Rodar o servidor:
 
 1. Clone o repositório da Fake API:  
    [Fake API GitHub](https://github.com/enio-infotera/infotera-frontend-test-server)
